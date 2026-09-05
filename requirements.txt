@@ -3,3 +3,8 @@ langgraph
 dotenv
 langchain-mistralai
 streamlit
+langchain-openrouter
+langchain_text_splitters
+langchain_openai
+langchain_community
+chromadb
