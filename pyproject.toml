@@ -7,5 +7,6 @@ requires-python = ">=3.12.7"
 dependencies = [
     "langchain>=1.4.7",
     "langchain-mistralai>=1.1.6",
+    "pydantic>=2.14.1",
     "python-dotenv>=1.2.4",
 ]
