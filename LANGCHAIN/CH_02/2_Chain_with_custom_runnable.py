@@ -6,7 +6,7 @@ load_dotenv()
 # ================================== CHAIN WITH CUSTOM RUNNABLE ==================================
 
 # -------------------------------- Task 1 - Prompt --------------------------------
-from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 
 prompt_template = ChatPromptTemplate.from_messages(
     [("system", "You are an helpful Assistant"), ("human", "{topic}")]
@@ -55,5 +55,5 @@ chain = (
     | llm_mistral
     | str_parser
 )
-response = chain.invoke("Today is solved 10 leetcode hard questions")
+response = chain.invoke({"topic": "Today is solved 10 leetcode hard questions"})
 print(response)
