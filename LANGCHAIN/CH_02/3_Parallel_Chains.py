@@ -125,4 +125,3 @@ beautify_runnable = RunnableLambda(beautify)
 
 final_beautified = final_chain | beautify_runnable
 response = final_beautified.invoke({"topic": "KGF"})
-print(response)
